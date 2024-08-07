@@ -1,0 +1,219 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+	min-height: 100vh;
+	font-family: 'SourceHanSerifTC', Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
+		Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	overflow: hidden;
+
+	/* Disbale selection on website */
+	-webkit-user-select: none; /* Safari */
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none; /* Internet Explorer/Edge */
+	user-select: none;
+}
+
+#app {
+	min-width: 400px;
+	min-height: 400px;
+	width: 100wh;
+	height: 100vh;
+}
+
+.chinese-font {
+	font-family: 'SourceHanSerifTC', sans-serif;
+}
+
+.english-font {
+	font-family: '微軟正黑體', sans-serif;
+}
+
+.transition-300-out {
+	transition: all 300ms ease-out;
+}
+
+
+
+
+
+/* ========== transition ========== */
+/* ========== 從左至右淡入 ========== */
+.slide-fade-right-enter-active {
+	transition: all 2.0s ease-out;
+}
+
+.slide-fade-right-leave-active {
+	transition: all 2.0s ease-out;
+}
+
+.slide-fade-right-enter-from,
+.slide-fade-right-leave-to {
+	transform: translateX(-80px);
+	opacity: 0;
+}
+
+/* ========== 從下至上淡入 ========== */
+.slide-fade-up-enter-active {
+	transition: all 1.8s ease-out;
+}
+
+.slide-fade-up-leave-active {
+	transition: all 1.8s ease-out;
+}
+
+.slide-fade-up-enter-from,
+.slide-fade-up-leave-to {
+	transform: translateY(80px);
+	opacity: 0;
+}
+
+/* ========== 從右至左邊淡入 ========== */
+.slide-fade-left-enter-active {
+	transition: all 1.5s ease-out;
+}
+
+.slide-fade-left-leave-active {
+	transition: all 1.5s ease-out;
+}
+
+.slide-fade-left-enter-from,
+.slide-fade-left-leave-to {
+	transform: translateX(80px);
+	opacity: 0;
+}
+
+/* ========== 從右至左邊滑動 ========== */
+.slide-left-enter-active {
+	transition: all 1.5s ease-out;
+}
+
+.slide-left-leave-active {
+	transition: all 1.5s ease-out;
+}
+
+.slide-left-enter-from,
+.slide-left-leave-to {
+	transform: translateX(50%);
+}
+
+/* ========== 從左至右邊滑動 ========== */
+.slide-right-enter-active {
+	transition: all 1.5s ease-out;
+}
+
+.slide-right-leave-active {
+	transition: all 1.5s ease-out;
+}
+
+.slide-right-enter-from,
+.slide-right-leave-to {
+	transform: translateX(-10%);
+}
+
+/* ========== 從上至下淡入 ========== */
+.slide-fade-down-enter-active {
+	transition: all 1.8s ease-out;
+}
+
+.slide-fade-down-leave-active {
+	transition: all 1.8s ease-out;
+}
+
+.slide-fade-down-enter-from,
+.slide-fade-down-leave-to {
+	transform: translateY(-80px);
+	opacity: 0;
+}
+
+/* ========== 從上至下滑動 ========== */
+.slide-down-enter-active {
+	transition: all 2.6s ease-out;
+}
+
+.slide-down-leave-active {
+	transition: all 2.6s ease-out;
+}
+
+.slide-down-enter-from,
+.slide-down-leave-to {
+	transform: translateY(-80px);
+}
+
+/* ========== 淡入 ========== */
+.fade-enter-active {
+	transition: all 2.0s ease-out;
+}
+
+.fade-leave-active {
+	transition: all 2.0s ease-out;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+	opacity: 0;
+}
+
+
+/* ========== 往右伸長 ========== */
+.stretch-right-enter-active {
+	transition: all 2.0s ease-out;
+}
+
+.stretch-right-leave-active {
+	transition: all 2.0s ease-out;
+}
+
+.stretch-right-enter-from,
+.stretch-right-leave-to {
+	width: 0%;
+	opacity: 0;
+}
+
+/* ========== 放大至縮小淡入 ========== */
+.scale-down-enter-active {
+	transition: all 2.0s ease-out;
+}
+
+.scale-down-leave-active {
+	transition: all 2.0s ease-out;
+}
+
+.scale-down-enter-from,
+.scale-down-leave-to {
+	transform: scale(1.2);
+	opacity: 0;
+}
+
+/* ========== 圖片淡入淡出 ========== */
+.image-fade-enter-active,
+.image-fade-leave-active {
+    transition: all 0.9s ease;
+    visibility: visible;
+    position: absolute;
+}
+
+.image-fade-enter-from, 
+.image-fade-leave-to {
+	visibility: hidden;
+    opacity: 0;
+}
+
+
+/* ========== 圖片淡入淡出(慢) ========== */
+.image-fade-slow-enter-active,
+.image-fade-slow-leave-active {
+    transition: all 2.0s ease;
+    visibility: visible;
+    position: absolute;
+}
+
+.image-fade-slow-enter-from, 
+.image-fade-slow-leave-to {
+	visibility: hidden;
+    opacity: 0;
+}
