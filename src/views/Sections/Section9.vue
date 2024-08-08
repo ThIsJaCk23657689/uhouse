@@ -1,5 +1,28 @@
 <script setup lang="ts">
-import { ref, watch, onMounted } from 'vue';
+import { ref, onMounted } from 'vue';
+import emailjs from 'emailjs-com';
+
+const submitForm = async (event: Event) => {
+    try {
+        const target = event.target as HTMLFormElement;
+        await emailjs.sendForm(
+            'service_xt09w9s', // 你的 EmailJS 服務 ID
+            'template_ndeze7f', // 你的 EmailJS 模板 ID
+            target // 表單元素
+        );
+        alert('傳送成功！');
+
+    } catch (error) {
+        console.error('Error sending email:', error);
+        alert('傳送失敗！');
+    }
+};
+
+onMounted(() => {
+    // 初始化 EmailJS
+    emailjs.init('XQ9A7ELQ1lzNkdSBi');
+});
+
 </script>
 
 <template>
@@ -14,20 +37,20 @@ import { ref, watch, onMounted } from 'vue';
 
 
             <div class="w-full p-6">
-                <form action="" class="space-y-2">
+                <form action="" class="space-y-2" @submit.prevent="submitForm">
                     <!-- 姓名 -->
                     <div class="flex items-center space-x-2 bg-white rounded-md p-2">
-                        <label for="name" class="text-md font-bold text-primary-300 pr-2 border-r-2 border-primary-300">姓名</label>
-                        <input id="name" type="text"
-                            class="flex-1 border-none rounded-md p-1 focus:outline-none"
+                        <label for="name"
+                            class="text-md font-bold text-primary-300 pr-2 border-r-2 border-primary-300">姓名</label>
+                        <input id="name" name="name"ype="text" class="flex-1 border-none rounded-md p-1 focus:outline-none"
                             placeholder="輸入姓名" />
                     </div>
 
                     <!-- 電話 -->
                     <div class="flex items-center space-x-2 bg-white rounded-md p-2">
-                        <label for="phone" class="text-md font-bold text-primary-300 pr-2 border-r-2 border-primary-300">電話</label>
-                        <input id="phone" type="text"
-                            class="flex-1 border-none rounded-md p-1 focus:outline-none"
+                        <label for="phone"
+                            class="text-md font-bold text-primary-300 pr-2 border-r-2 border-primary-300">電話</label>
+                        <input id="phone" name="phone" type="text" class="flex-1 border-none rounded-md p-1 focus:outline-none"
                             placeholder="輸入電話" />
                     </div>
 
@@ -35,12 +58,12 @@ import { ref, watch, onMounted } from 'vue';
                     <div class="flex items-center space-x-2">
                         <span class="text-md font-bold text-primary-300 pl-2">性別</span>
                         <label class="inline-flex items-center space-x-2 cursor-pointer">
-                            <input type="radio" name="gender" value="male"
+                            <input type="radio" name="gender" value="先生"
                                 class="form-radio h-4 w-4 text-blue-600 focus:ring-blue-500" />
                             <span class="text-md font-bold text-primary-300">男生</span>
                         </label>
                         <label class="inline-flex items-center space-x-2 cursor-pointer">
-                            <input type="radio" name="gender" value="female"
+                            <input type="radio" name="gender" value="小姐"
                                 class="form-radio h-4 w-4 text-blue-600 focus:ring-blue-500" />
                             <span class="text-md font-bold text-primary-300">女生</span>
                         </label>
@@ -48,7 +71,7 @@ import { ref, watch, onMounted } from 'vue';
 
                     <!-- 訂閱 -->
                     <div class="flex items-center space-x-2 pl-12">
-                        <input type="checkbox" id="interest" class="h-4 w-4 text-blue-600 focus:ring-blue-500" />
+                        <input type="checkbox" id="interest" name="interest" class="h-4 w-4 text-blue-600 focus:ring-blue-500" />
                         <label for="interest" class="text-md font-bold text-primary-300">我有興趣了解</label>
                     </div>
 
