@@ -9,7 +9,6 @@ body {
 	text-rendering: optimizeLegibility;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-	overflow: hidden;
 
 	/* Disbale selection on website */
 	-webkit-user-select: none; /* Safari */
@@ -21,8 +20,6 @@ body {
 #app {
 	min-width: 400px;
 	min-height: 400px;
-	width: 100wh;
-	height: 100vh;
 }
 
 .chinese-font {
@@ -37,8 +34,17 @@ body {
 	transition: all 300ms ease-out;
 }
 
+.transition-1000-out {
+	transition: all 1000ms ease-out;
+}
 
+.h-min-screen {
+	min-height: 100vh;
+}
 
+.h-half-screen {
+	height: 50vh;
+}
 
 
 /* ========== transition ========== */
