@@ -27,12 +27,12 @@ onMounted(() => {
 
 <template>
     <section class="w-full h-screen flex justify-center items-center bg-primary-100">
-        <div class="w-2/6 flex flex-col justify-center items-center">
+        <div class="w-full md:w-auto flex flex-col justify-center items-center">
             <div class="mb-4">
                 <img src="@/assets/images/section9/logo.png" alt="">
             </div>
             <div>
-                <span class="text-xl font-bold text-primary-300">近境 13 期 | 大慶站 | 忠明國道 | 2 房 3 房 | 23761070</span>
+                <span class="text-sm sm:text-xl font-bold text-primary-300">近境 13 期 | 大慶站 | 忠明國道 | 2 房 3 房 | 23761070</span>
             </div>
 
 
@@ -76,7 +76,7 @@ onMounted(() => {
                     </div>
 
                     <!-- 資料用途 -->
-                    <div class="text-md font-bold text-primary-300 pl-12">
+                    <div class="text-sm sm:text-md font-bold text-primary-300 pl-12">
                         <span class="block mb-1">您所登錄的個人資料將做以下用途</span>
                         <ul class="list-none space-y-1">
                             <li>（一）本網站所載之相關事項通知</li>
