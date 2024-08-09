@@ -9,7 +9,7 @@ import { ref, onMounted } from 'vue';
             <img src="@/assets/images/section1/big_u.png" alt="" class="object-cover w-full">
         </Transition>
     </div>
-    <div class="w-full lg:w-6/12 h-screen flex flex-col lg:flex-row justify-end lg:justify-center items-end xl:items-center pb-36 xl:pb-0">
+    <div class="w-full lg:w-6/12 h-screen flex flex-col lg:flex-row justify-end lg:justify-center items-end xl:items-center pb-36 xl:pb-0 z-10">
         <div class="mr-8 mb-24 hidden lg:mr-6 lg:flex">
             <Transition name="slide-down" appear>
                 <img src="@/assets/images/section1/small_u.png" alt="" class="object-cover">
