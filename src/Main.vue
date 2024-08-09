@@ -26,7 +26,7 @@ const Sections = [
 </script>
 
 <template>
-<div class="w-full flex flex-col justify-center items-center">
+<div class="w-full flex flex-col justify-center items-center overflow-hidden">
 	<component
 		v-for="(Section, index) in Sections"
 		:key="index"
