@@ -28,11 +28,11 @@ const imageRight = new URL('@/assets/images/section3/right.png', import.meta.url
     </div>
 
     <div class="w-full flex flex-row justify-center items-center h-36 sm:h-60 md:h-80 xl:h-[36rem]">
-        <div class="w-2/5 h-full mr-4">
+        <div class="w-2/5 h-full mr-1 md:mr-2">
             <ImageContainer :src="imageLeft" alt="" />
         </div>
-        <div class="w-1/5 h-full flex flex-col justify-center items-center mr-2">
-            <div class="w-full h-1/2 mb-2">
+        <div class="w-1/5 h-full flex flex-col justify-center items-center mr-1 md:mr-2">
+            <div class="w-full h-1/2 mb-1 md:mb-2">
                 <ImageContainer :src="imageTop" alt="" />
             </div>
             <div class="w-full h-1/2">
