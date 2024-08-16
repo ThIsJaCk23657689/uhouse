@@ -2,6 +2,7 @@
 import { ref, watch, onMounted } from 'vue';
 import ImageContainer from '@/components/ImageContainer.vue';
 
+const image1 = new URL('@/assets/images/section4/pic1.png', import.meta.url).href;
 const image2 = new URL('@/assets/images/section4/pic2.png', import.meta.url).href;
 
 </script>
@@ -9,24 +10,26 @@ const image2 = new URL('@/assets/images/section4/pic2.png', import.meta.url).hre
 <template>
 <section class="w-full flex flex-col justify-center items-center relative">
 
-    <!-- 圖片1 -->
-    <div class="absolute top-0 left-0 w-2/3">
-        <img src="@/assets/images/section4/pic1.png" alt="" class="object-cover">
+    <div class="w-full bg-zinc-200 lg:bg-transparent relative lg:absolute top-0 left-0 flex flex-col lg:flex-row items-center">
+        <!-- 圖片1 -->
+        <div class="w-full h-96 lg:w-2/3 lg:h-[52rem] mb-8 lg:mb-0 lg:mr-6">
+            <ImageContainer :src="image1" alt="" />
+        </div>
+
+        <!-- 標題1 -->
+        <div class="w-2/3 lg:w-1/3">
+            <img src="@/assets/images/section4/title.png" alt="" class="object-cover">
+        </div>
     </div>
 
-    <!-- 標題1 -->
-    <div class="absolute top-[36rem] right-28">
-        <img src="@/assets/images/section4/title.png" alt="" class="object-cover">
-    </div>
+    <div class="w-full lg:h-32"></div>
+    <div class="w-full lg:h-[54rem] bg-zinc-200"></div>
 
-    <div class="w-full h-32"></div>
-    <div class="w-full h-[56rem] bg-zinc-200"></div>
-
-    <div class="w-full flex flex-col justify-center items-center relative bg-zinc-200">
+    <div class="w-full flex flex-col justify-center items-center relative bg-zinc-200 pt-8 lg:pt-0">
 
         <!-- 內文介紹 -->
-        <div class="w-full flex flex-col justify-center items-start ml-[62rem] mb-48 border-l-4 border-primary-200">
-            <div class="mb-12 pl-4">
+        <div class="w-full flex flex-col justify-center items-start lg:ml-[62rem] mb-24 lg:mb-48 lg:border-l-4 lg:border-primary-200">
+            <div class="mb-6 lg:mb-12 pl-4">
                 <p class="text-primary-300 font-bold text-[0.5rem] sm:text-base xl:text-xl">
                     灰白色系、層層遞進的框架，透過天光勾勒建築秩序<br>
                     將石材基座、格珊、琴鍵律動點亮<br>
@@ -36,7 +39,7 @@ const image2 = new URL('@/assets/images/section4/pic2.png', import.meta.url).hre
                     家的顏值　有型有款，U ARE STYLE！<br>
                 </p>
             </div>
-            <div class="w-1/2 h-24 sm:h-48 md:h-96 lg:h-[36rem]">
+            <div class="w-full lg:w-1/2 h-96 lg:h-[36rem]">
                 <ImageContainer :src="image2" alt="" />
             </div>
         </div>

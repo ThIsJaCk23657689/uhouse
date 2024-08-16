@@ -19,20 +19,20 @@ const images = [
 <template>
 <section class="w-full flex flex-col justify-center items-center relative">
 
-    <div class="w-full flex flex-row absolute top-0 left-0">
+    <div class="w-full flex flex-col lg:flex-row items-center relative lg:absolute top-0 left-0 bg-zinc-200 lg:bg-transparent">
         <!-- 圖片1 -->
-        <div class="w-5/12">
+        <div class="w-full lg:w-7/12 mb-8 lg:mb-0">
             <img src="@/assets/images/section6/toilet.png" alt="" class="object-cover">
         </div>
 
         <!-- 標題1 -->
-        <div class="ml-16 mt-24">
+        <div class="w-2/3 lg:ml-16 lg:mt-24 mb-6 lg:mb-0">
             <img src="@/assets/images/section6/title.png" alt="" class="object-cover">
         </div>
     </div>
 
-    <div class="w-full h-[22rem]"></div>
-    <div class="w-full h-screen flex justify-center items-center bg-gradient-to-r from-stone-50 to-zinc-200">
+    <div class="w-full lg:h-[22rem]"></div>
+    <div class="w-full lg:h-screen flex justify-center items-center bg-gradient-to-r from-stone-50 to-zinc-200">
 
         <div class="w-4/5 grid grid-cols-2 sm:grid-cols-4 gap-x-16 gap-y-6 p-4">
 
