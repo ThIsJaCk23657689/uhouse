@@ -1,5 +1,8 @@
 <script setup lang="ts">
 import { ref, watch, onMounted } from 'vue';
+import ImageContainer from '@/components/ImageContainer.vue';
+
+const image2 = new URL('@/assets/images/section4/pic2.png', import.meta.url).href;
 
 </script>
 
@@ -33,8 +36,8 @@ import { ref, watch, onMounted } from 'vue';
                     家的顏值　有型有款，U ARE STYLE！<br>
                 </p>
             </div>
-            <div class="w-1/2">
-                <img src="@/assets/images/section4/pic2.png" alt="" class="w-full object-cover">
+            <div class="w-1/2 h-24 sm:h-48 md:h-96 lg:h-[36rem]">
+                <ImageContainer :src="image2" alt="" />
             </div>
         </div>
 
