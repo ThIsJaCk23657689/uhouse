@@ -50,15 +50,7 @@ const image4 = new URL('@/assets/images/section7/4.png', import.meta.url).href;
     
         </div>
 
-
-
     </div>
-
-
-    
-
-
-
 </section>
 </template>
 
