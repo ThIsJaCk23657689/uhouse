@@ -40,10 +40,9 @@ const image2 = new URL('@/assets/images/section4/pic2.png', import.meta.url).hre
                 <ImageContainer :src="image2" alt="" />
             </div>
         </div>
-
-
-
+        
     </div>
+
 </section>
 </template>
 
