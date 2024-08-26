@@ -44,15 +44,19 @@ const imageRight = new URL('@/assets/images/section3/right.png', import.meta.url
         </div>
     </div>
 
-    <div class="w-full h-36 sm:h-60 md:h-80 xl:h-96 flex flex-row justify-center items-center">
-        <p class="text-primary-300 font-bold text-[0.5rem] sm:text-base xl:text-xl">
-            5 分鐘雙鐵共構大慶站、中投快速道路<br/>
-            捷運暢遊 COSTCO、迪卡農、文心秀泰、新市政中心···<br/>
-            與 13 期重劃共榮共利，前景滾燙、磁吸效應驚人<br/>
-            國圖館、國美館、中山醫、柳川、忠明綠園道···<br/>
-            快繁華與慢悠閒，在此自由切換 —<br/>
-            城市就是主場優勢，U ARE NEXT！
-        </p>
+    <div class="w-full h-36 sm:h-60 md:h-80 xl:h-96 flex flex-row">
+        <div class="w-2/5 h-full"></div>
+        <div class="w-3/5 h-full ml-2 flex items-center">
+            <p class="text-primary-300 font-bold text-[0.5rem] sm:text-base xl:text-xl">
+                5 分鐘雙鐵共構大慶站、中投快速道路<br/>
+                捷運暢遊 COSTCO、迪卡農、文心秀泰、新市政中心···<br/>
+                與 13 期重劃共榮共利，前景滾燙、磁吸效應驚人<br/>
+                國圖館、國美館、中山醫、柳川、忠明綠園道···<br/>
+                快繁華與慢悠閒，在此自由切換 —<br/>
+                城市就是主場優勢，U ARE NEXT！
+            </p>
+        </div>
+
     </div>
 </section>
 </template>
