@@ -27,7 +27,7 @@ const image4 = new URL('@/assets/images/section7/4.png', import.meta.url).href;
 
             <!-- 文字 -->
             <div class="w-full lg:w-3/5 pl-6 lg:pl-0 mb-24 lg:mb-12">
-                <p class="text-primary-300 font-bold text-xl">
+                <p class="text-primary-300 font-bold text-[0.5rem] sm:text-base xl:text-xl">
                     精品就是生活，生活就是精品<br>
                     以高級訂製概念，打造居家質感<br>
                     國際級頂規選品，有機能也要夠美型<br>
