@@ -3,9 +3,9 @@ import { ref, watch, onMounted } from 'vue';
 import ImageContainer from '@/components/ImageContainer.vue';
 
 const image1 = new URL('@/assets/images/section8/1.png', import.meta.url).href;
-const image2 = new URL('@/assets/images/section8/2.png', import.meta.url).href;
+const image2 = new URL('@/assets/images/section8/2.jpg', import.meta.url).href;
 const image3 = new URL('@/assets/images/section8/3.png', import.meta.url).href;
-const image4 = new URL('@/assets/images/section8/4.png', import.meta.url).href;
+const image4 = new URL('@/assets/images/section8/4.jpg', import.meta.url).href;
 const image5 = new URL('@/assets/images/section8/5.png', import.meta.url).href;
 
 </script>
