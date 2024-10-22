@@ -17,30 +17,35 @@ const image5 = new URL('@/assets/images/section8/5.png', import.meta.url).href;
         <div class="w-2/5 h-full bg-white"></div>
     </div>
 
-    <div class="w-2/3 lg:w-full mt-6 lg:mt-0 lg:pl-[15rem] mb-8 lg:mb-36">
+    <div class="w-2/3 lg:w-full mt-6 lg:mt-0 lg:pl-[15rem] mb-8 lg:mb-28">
         <img src="@/assets/images/section8/title.png" alt="" class="object-cover">
     </div>
 
-    <div class="w-full lg:w-10/12 flex flex-col justify-center items-center mb-16">
+    <div class="w-full lg:w-10/12 flex flex-col lg:flex-row justify-center items-center mb-16">
 
-        <div class="w-full flex flex-col lg:flex-row justify-center items-center mb-0 lg:mb-2">
-            <div class="w-full lg:w-1/3 h-96 lg:mr-2 mb-1 lg:mb-0">
-                <ImageContainer :src="image1" alt="" />
+        <div class="w-full lg:w-2/3 flex flex-col mb-2 lg:mb-0">
+            <div class="w-full flex flex-col lg:flex-row justify-center items-center mb-2">
+                <div class="w-full h-[24rem] mb-2 lg:mb-0 lg:mr-2">
+                    <ImageContainer :src="image1" alt="" />
+                </div>
+                <div class="w-full h-[24rem] mb-0 lg:mr-2">
+                    <ImageContainer :src="image3" alt="" />
+                </div>
             </div>
-            <div class="w-full lg:w-1/3 h-96 lg:mr-2 mb-1 lg:mb-0">
-                <ImageContainer :src="image2" alt="" />
-            </div>
-            <div class="w-full lg:w-1/3 h-96 mb-1 lg:mb-0">
-                <ImageContainer :src="image3" alt="" />
+
+            <div class="w-full flex flex-col lg:flex-row justify-center items-center">
+                <div class="w-full h-[24rem] mb-2 lg:mb-0 lg:mr-2">
+                    <ImageContainer :src="image4" alt="" />
+                </div>
+                <div class="w-full h-[24rem] mb-0 lg:mr-2">
+                    <ImageContainer :src="image5" alt="" />
+                </div>
             </div>
         </div>
 
-        <div class="w-full flex flex-col lg:flex-row justify-center items-center">
-            <div class="w-full lg:w-1/2 h-[36rem] lg:mr-2 mb-1 lg:mb-0">
-                <ImageContainer :src="image4" alt="" />
-            </div>
-            <div class="w-full lg:w-1/2 h-[36rem]">
-                <ImageContainer :src="image5" alt="" />
+        <div class="w-full lg:w-1/3 h-full flex flex-col">
+            <div class="w-full h-[48.5rem]">
+                <ImageContainer :src="image2" alt="" />
             </div>
         </div>
 
